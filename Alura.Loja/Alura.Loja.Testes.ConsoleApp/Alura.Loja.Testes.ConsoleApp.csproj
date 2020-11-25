@@ -184,7 +184,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cliente.cs" />
     <Compile Include="Compra.cs" />
+    <Compile Include="Endereco.cs" />
     <Compile Include="IProdutoDAO.cs" />
     <Compile Include="LojaContext.cs" />
     <Compile Include="Migrations\20201125143921_Inicial.cs" />
@@ -195,12 +197,26 @@
     <Compile Include="Migrations\20201125144043_Unidade.designer.cs">
       <DependentUpon>20201125144043_Unidade.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\20201125194252_Compra.cs" />
+    <Compile Include="Migrations\20201125194252_Compra.designer.cs">
+      <DependentUpon>20201125194252_Compra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\20201125202147_Promocao.cs" />
+    <Compile Include="Migrations\20201125202147_Promocao.designer.cs">
+      <DependentUpon>20201125202147_Promocao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\20201125215240_Cliente.cs" />
+    <Compile Include="Migrations\20201125215240_Cliente.designer.cs">
+      <DependentUpon>20201125215240_Cliente.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\LojaContextModelSnapshot.cs" />
     <Compile Include="Produto.cs" />
-    <Compile Include="ProdutoDAO.cs" />
     <Compile Include="ProdutoDAOEntity.cs" />
     <Compile Include="Program.cs" />
+    <Compile Include="Promocao.cs" />
+    <Compile Include="PromocaoProduto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SqlLoggerProvider.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
