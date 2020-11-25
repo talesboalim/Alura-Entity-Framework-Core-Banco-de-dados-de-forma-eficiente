@@ -10,7 +10,7 @@ namespace Alura.Loja.Testes.ConsoleApp
 
         public ProdutoDAO()
         {
-            this.conexao = new SqlConnection("Server=(localdb)\\mssqllocaldb;Database=LojaDB;Trusted_Connection=true;");
+            this.conexao = new SqlConnection("Data Source=.;Initial Catalog=LojaDB;Persist Security Info=True;User ID=sa;");
             this.conexao.Open();
         }
 
@@ -19,7 +19,7 @@ namespace Alura.Loja.Testes.ConsoleApp
             this.conexao.Close();
         }
 
-        internal void Adicionar(Produto p)
+        public void Adicionar(Produto p)
         {
             try
             {
@@ -42,7 +42,7 @@ namespace Alura.Loja.Testes.ConsoleApp
             }
         }
 
-        internal void Atualizar(Produto p)
+        public void Atualizar(Produto p)
         {
             try
             {
@@ -66,7 +66,7 @@ namespace Alura.Loja.Testes.ConsoleApp
             }
         }
 
-        internal void Remover(Produto p)
+        public void Remover(Produto p)
         {
             try
             {
