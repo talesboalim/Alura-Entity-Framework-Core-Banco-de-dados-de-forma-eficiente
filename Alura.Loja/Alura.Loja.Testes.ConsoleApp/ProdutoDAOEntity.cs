@@ -12,7 +12,8 @@ namespace Alura.Loja.Testes.ConsoleApp
 
         public void Adicionar(Produto p)
         {
-            throw new NotImplementedException();
+            contexto.Produtos.Add(p);
+            contexto.SaveChanges();
         }
 
         public void Atualizar(Produto p)
@@ -42,4 +43,5 @@ namespace Alura.Loja.Testes.ConsoleApp
             contexto.SaveChanges();
         }
     }
+    
 }

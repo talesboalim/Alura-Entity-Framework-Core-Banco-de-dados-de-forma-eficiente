@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Data.SqlClient;
 
 namespace Alura.Loja.Testes.ConsoleApp
-{
+{   /*
     internal class ProdutoDAO : IDisposable
     {
         private SqlConnection conexao;
@@ -106,4 +106,5 @@ namespace Alura.Loja.Testes.ConsoleApp
             return lista;
         }
     }
+    */
 }
